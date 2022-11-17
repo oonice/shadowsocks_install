@@ -384,10 +384,12 @@ config_shadowsocks(){
 {
     "server":"0.0.0.0",
     "server_ipv6":"[::]",
-    "server_port":${shadowsocksport},
     "local_address":"127.0.0.1",
     "local_port":1080,
-    "password":"${shadowsockspwd}",
+    "port_password":{
+        "${shadowsocksport}":"${shadowsockspwd}",
+        "8443":"${shadowsockspwd}"
+    },
     "timeout":120,
     "method":"${shadowsockscipher}",
     "protocol":"${shadowsockprotocol}",
@@ -397,7 +399,7 @@ config_shadowsocks(){
     "redirect":"",
     "dns_ipv6":false,
     "fast_open":false,
-    "workers":1
+    "workers":4
 }
 EOF
 }
