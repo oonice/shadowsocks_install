@@ -388,7 +388,7 @@ config_shadowsocks(){
     "local_port":1080,
     "port_password":{
         "${shadowsocksport}":"${shadowsockspwd}",
-        "8443":"${shadowsockspwd}"
+        "8843":"${shadowsockspwd}"
     },
     "timeout":120,
     "method":"${shadowsockscipher}",
