@@ -399,7 +399,7 @@ config_shadowsocks(){
     "redirect":"",
     "dns_ipv6":false,
     "fast_open":false,
-    "workers":4
+    "workers":1
 }
 EOF
 }
