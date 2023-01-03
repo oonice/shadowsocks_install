@@ -29,9 +29,9 @@ cur_dir=`pwd`
 # Stream Ciphers
 ciphers=(
 none
-aes-256-cfb
-aes-192-cfb
 aes-128-cfb
+aes-192-cfb
+aes-256-cfb
 aes-256-cfb8
 aes-192-cfb8
 aes-128-cfb8
